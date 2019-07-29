@@ -11,7 +11,11 @@
 
 <%-- Include navbar here --%>
 
-<%@ include file = "nav.jsp" %>
+<%-- <%@ include file = "nav.jsp" %> This is one way to use ]include] --%>
+
+
+<jsp:include page="nav.jsp" >
+
 <br> <br><br> <br>
 <div class="container">
          <h1>Display Current Date & Time</h1>
@@ -19,7 +23,7 @@
     
     
    
-    <%--Math --%>
+    <%----%>
     
     <h4>Display String</h4><hr>
     <%= new String("This string has been converted to uppdercase").toUpperCase() %><br>
