@@ -1,0 +1,20 @@
+@charset "ISO-8859-1";
+
+
+body{
+	height:1500px;
+	background-color:#f2f2f2 !important;
+}
+
+h3{
+	background-color: #fff;
+	color:#f00 !important;
+	text-align:center;
+	margin-top: 120px !important;
+	padding:20px;
+}
+
+p.show_date {
+	color: #f00; 
+	font-size: 25px;
+}
