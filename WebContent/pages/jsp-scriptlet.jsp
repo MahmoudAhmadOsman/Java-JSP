@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>JSP Scriptlet</title>
  <link rel="stylesheet" type="text/css" href="../css/style.css"/>
 </head>
 <body>
@@ -14,7 +14,8 @@
 <!-- Is is another way to include a file -->
 <jsp:include page="nav.jsp"/>  
 <br><br>
-<center>
+
+<div class="container">
 <h3>JSP Scriptlet</h3>
 
 <%
@@ -24,7 +25,7 @@ for(int i=0; i < 10; i++){
 
 
 %>
-</center>
+</div>
 
 </body>
 </html>

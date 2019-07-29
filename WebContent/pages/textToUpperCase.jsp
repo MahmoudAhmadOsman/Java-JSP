@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Display Math Result</title>
+<title>textToUpperCase</title>
 </head>
 <body>
 <jsp:include page="nav.jsp"/>

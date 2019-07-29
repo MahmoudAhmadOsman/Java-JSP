@@ -14,10 +14,13 @@
 <%@ include file = "nav.jsp" %>
 
 
+
+<div class="container">
+
 <br><br><br><br><br><br>
 
+<h2>JSP Expression</h2>
 
-<center>
 
 <!-- JSP Expression -->
 
@@ -38,7 +41,7 @@
 
 
 
-</center>
+</div>
 
 
 
