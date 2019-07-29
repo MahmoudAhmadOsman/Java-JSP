@@ -13,7 +13,7 @@
 
 <%@ include file = "nav.jsp" %>
 <br> <br><br> <br>
-<center>
+<div class="container">
          <h1>Display Current Date & Time</h1>
     <p class="show_date"><%= new java.util.Date() %></p>
     
@@ -35,6 +35,6 @@
     
     
     
- </center>
+ </div>
 </body>
 </html>
