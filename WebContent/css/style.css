@@ -18,3 +18,35 @@ p.show_date {
 	color: #f00; 
 	font-size: 25px;
 }
+
+
+
+/* Contact form */
+
+.contact_form h1{
+	font-size: 45px;
+	font-weight: bold;
+	border-bottom: 3px solid #4a4a41;
+	margin-bottom: 37px;
+}
+.contact_form input{
+	background-color:#4a4a41;
+	color: #fff;
+}
+
+.contact_form .btn-primary{
+	    min-width: 15%;
+	    font-size: 25px;
+	    font-weight:bold;
+}
+
+
+
+
+
+
+
+
+
+
+
