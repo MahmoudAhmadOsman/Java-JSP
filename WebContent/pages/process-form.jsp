@@ -32,16 +32,18 @@
  	<!-- So, this is how you do it using different java method() [getParametterValues] -->
  	
  	<p><b>Favorite Languages are:</b> 
- 	<%
- 		/* ** Use array ** */
+ 	
+ 		<!-- ** Use array **  -->
  		
- 		String [] langs = request.getParameterValues("favProgrammingLang");
+ 	<ul>	
+ <% 
+ 
+ String [] langs = request.getParameterValues("favProgrammingLang");
  	
  		/* Now loop through the language items */
  		/* Also, Generate html elements on the fly  */
+ 		
  		for(String langItems : langs){
- 			
- 			
  			
  			out.println("<li>" + langItems + "</li>");
  		}
@@ -49,8 +51,10 @@
  		
  		
  		
- 	--%></p>
+ 	%>
  	
+ 	</ul>
+ 	</p>
  	
  	
  	
