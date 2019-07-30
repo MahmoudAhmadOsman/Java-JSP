@@ -26,10 +26,11 @@
  	
  	<%-- 
  		-- This is not going to work if the user selects more than one language
- 		<p><b>Favorite Programming Language:</b> <%= request.getParameter("favProgrammingLang")%></p> 
+ 		 <p><b>Favorite Programming Language:</b> <%= request.getParameter("favProgrammingLang")%></p> 
  	--%>
  	
  	<!-- So, this is how you do it using different java method() [getParametterValues] -->
+ 	
  	<p><b>Favorite Languages are:</b> 
  	<%
  		/* ** Use array ** */
@@ -37,18 +38,18 @@
  		String [] langs = request.getParameterValues("favProgrammingLang");
  	
  		/* Now loop through the language items */
- 		
- 		
+ 		/* Also, Generate html elements on the fly  */
  		for(String langItems : langs){
  			
- 			/* Generate html elements on the fly */
+ 			
+ 			
  			out.println("<li>" + langItems + "</li>");
  		}
  		
  		
  		
  		
- 	%></p>
+ 	--%></p>
  	
  	
  	
