@@ -22,11 +22,13 @@
 <h2>JSP Expression</h2>
 
 
-<!-- JSP Expression -->
+<!-- This is JSP Expression -->
 
 
 <%!
-  String StringToLower(String data){
+  
+
+String StringToLower(String data){
 	
 	return data.toLowerCase();
 }

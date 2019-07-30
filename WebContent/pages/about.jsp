@@ -14,7 +14,7 @@
 <%-- <%@ include file = "nav.jsp" %> This is one way to use ]include] --%>
 
 
-<jsp:include page="nav.jsp" >
+<jsp:include page="nav.jsp"/>
 
 <br> <br><br> <br>
 <div class="container">
