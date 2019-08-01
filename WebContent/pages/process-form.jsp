@@ -19,7 +19,7 @@
 	<p><b>First Name:</b> <%= request.getParameter("fname")%></p>
 	<p><b>Last Name:</b>  <%= request.getParameter("lname")%></p>
 	<p><b>Email Address:</b> <%= request.getParameter("email")%></p>
-	<p><b>Country</b> <%= request.getParameter("country")%></p>
+	<p><b>Country: </b> <%= request.getParameter("country")%></p>
  	<p><b>Favorite Languages:</b> <%= request.getParameter("favoriteLanguage")%></p> 
  	
  	
