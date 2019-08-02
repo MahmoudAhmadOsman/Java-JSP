@@ -40,7 +40,7 @@ public class ContactFormController extends HttpServlet {
 	throws ServletException, IOException {
 		// Now get the form name values
 		
-		//Or String fname = request.getParameter("fname");
+		//This is another way: String fname = request.getParameter("fname");
 		
 		 response.getWriter().println(request.getParameter("fname") );
 		 response.getWriter().println(request.getParameter("lname") );
