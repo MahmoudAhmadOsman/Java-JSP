@@ -16,10 +16,10 @@
 
 <h1 class="text-danger">Form Information</h1>
 <!-- ** You can do this way **  -->
-	<p><b>First Name:</b> <%= request.getParameter("fname")%></p>
-	<p><b>Last Name:</b>  <%= request.getParameter("lname")%></p>
-	<p><b>Email Address:</b> <%= request.getParameter("email")%></p>
-	<p><b>Country: </b> <%= request.getParameter("country")%></p>
+	<p><b>First Name:</b>        <%= request.getParameter("fname")%></p>
+	<p><b>Last Name:</b>          <%= request.getParameter("lname")%></p>
+	<p><b>Email Address:</b>      <%= request.getParameter("email")%></p>
+	<p><b>Country: </b>           <%= request.getParameter("country")%></p>
  	<p><b>Favorite Languages:</b> <%= request.getParameter("favoriteLanguage")%></p> 
  	
  	
@@ -43,11 +43,15 @@
  		/* Now loop through the language items */
  		/* Also, Generate html elements on the fly  */
  		
+ 		if(langs != null){
+ 		
  		for(String langItems : langs){
  			
  			out.println("<li>" + langItems + "</li>");
  		}
- 		
+ 	}else{
+ 		out.print("Please, select one of your favorite language!");
+ 	}
  		
  		
  		

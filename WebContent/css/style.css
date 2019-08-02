@@ -3,7 +3,7 @@
 
 body{
 	height:1500px;
-	background-color:#f2f2f2 !important;
+	background-color:#fff;
 }
 
 h3{
@@ -26,21 +26,43 @@ p.show_date {
 .contact_form h1{
 	font-size: 45px;
 	font-weight: bold;
-	border-bottom: 3px solid #4a4a41;
+	border-bottom: 2px solid #4a4a41;
 	margin-bottom: 37px;
 }
-.contact_form input{
-	background-color:#4a4a41;
-	color: #fff;
+.contact_form input, 
+.contact_form textarea{
+	background-color:#eaeaea;
+	color: #000;
 }
 
-.contact_form .btn-primary{
-	    min-width: 15%;
-	    font-size: 25px;
-	    font-weight:bold;
-	    margin-top: 20px;
+.contact_form .btn.send-data{
+	min-width: 15%;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    background: none;
+    border-radius: 50px;
+    color: #000;
+    width: 240px;
+    border: 2px solid #000;
+    transition:all .3s eas-in-out;
+    -webkit-transition:all .3s ease-in-out;
+     -ms-transition:all .3s ease-in-out;
+      -moz-transition:all .3s ease-in-out;
+       -o-transition:all .3s ease-in-out;
 }
-
+.contact_form .btn.send-data:hover{
+	min-width: 15%;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    background: none;
+    border-radius: 50px;
+    color: #000;
+    width: 240px;
+    border: 2px solid #5d5353;
+    color:#5d5353
+}
 
 
 

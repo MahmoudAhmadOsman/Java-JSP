@@ -17,10 +17,13 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-2">
                     <h1>Contact Us</h1>
-                    <form action="process-form.jsp" method="POST">
+                    <!-- <form action="process-form.jsp" method="POST"> -->
+                    
+                   <!--  Now sumbit the form to the controller -->
+                    <form action="<%= request.getContextPath() %>/ContactFormController" method="POST">
                         <div class="form-group">
                             <label for="fname">First Name:</label>
-                            <input type="text" class="form-control input-lg" name="fname" placeholder="First name">
+                            <input type="text" class="form-control input-lg" name="fname" placeholder="First name" required>
                         </div>
                         <div class="form-group">
                             <label for="lname">Last Name:</label>
@@ -31,8 +34,8 @@
                             <input type="text" class="form-control input-lg" name="email" placeholder="Enter valid email">
                         </div>
                         <div class="form-group">
-                            <select name="country" class="form-control">
-                                <option>--Select Country -- </option>
+                            <b>Country:</b> <select name="country" class="form-control">
+                               <option>India</option>
                                 <option>USA</option>
                                 <option>Somalia</option>
                                 <option>Kenya</option>
@@ -58,10 +61,10 @@
                         <input type="checkbox" name="favProgrammingLang" value="python" /> PYTHON
                         <div class="form-group">
                             <label for="message">Message:</label>
-                            <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Your message...">
+                            <textarea name="message" id="message" cols="30" rows="15" class="form-control" placeholder="Your message...">
 
                 </textarea>
-                            <button typ="submit" class="btn btn-primary btn-lg">SEND</button>
+                            <button typ="submit" class="btn btn-primary btn-lg send-data">SEND</button>
                     </form>
                 </div>
             </div>

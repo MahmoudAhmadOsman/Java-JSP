@@ -1,6 +1,8 @@
 package com.contact.form.demo;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -26,16 +28,53 @@ public class ContactFormController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		
+		
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			
+	throws ServletException, IOException {
+		// Now get the form name values
+		
+		//Or String fname = request.getParameter("fname");
+		
+		 response.getWriter().println(request.getParameter("fname") );
+		 response.getWriter().println(request.getParameter("lname") );
+		 response.getWriter().println(request.getParameter("email") );
+		 response.getWriter().println(request.getParameter("country") );
+		 response.getWriter().println(request.getParameter("favoriteLanguage"));
+		
+		
+		
+		
+		
+		//response.getWriter().println(request.getParameter("favProgrammingLang"));
+		
+		//Add this first. because the [out.println] will give you some error
+		
+		PrintWriter out = response.getWriter();
+	
+	String [] langs = request.getParameterValues("favProgrammingLang");
+	 	
+ 		
+ 		
+ 		if(langs != null){
+ 		
+ 		for(String langItems : langs){
+ 			
+ 			out.println("<li>" + langItems + "</li>");
+ 		}
+ 	}else{
+ 		out.print("Please, select one of your favorite language!");
+ 	}
+		
+ 		response.getWriter().println(request.getParameter("message"));	
+			
+		
 	}
 
 }
